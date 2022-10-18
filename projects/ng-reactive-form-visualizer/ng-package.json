@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/reactive-form-visualizer",
+  "dest": "../../dist/ng-ng-reactive-form-visualizer",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

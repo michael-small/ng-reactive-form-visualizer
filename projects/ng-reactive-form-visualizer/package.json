@@ -1,5 +1,5 @@
 {
-  "name": "reactive-form-visualizer",
+  "name": "ng-reactive-form-visualizer",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.13",

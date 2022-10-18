@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReactiveFormVisualizerComponent } from './reactive-form-visualizer.component';
+import { NgReactiveFormVisualizerComponent } from './ng-reactive-form-visualizer.component';
 
 describe('ReactiveFormVisualizerComponent', () => {
-  let component: ReactiveFormVisualizerComponent;
-  let fixture: ComponentFixture<ReactiveFormVisualizerComponent>;
+  let component: NgReactiveFormVisualizerComponent;
+  let fixture: ComponentFixture<NgReactiveFormVisualizerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReactiveFormVisualizerComponent ]
-    })
-    .compileComponents();
+      declarations: [NgReactiveFormVisualizerComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReactiveFormVisualizerComponent);
+    fixture = TestBed.createComponent(NgReactiveFormVisualizerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,45 +3,47 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "reactive-form-visualizer": {
+    "ng-reactive-form-visualizer": {
       "projectType": "library",
-      "root": "projects/reactive-form-visualizer",
-      "sourceRoot": "projects/reactive-form-visualizer/src",
+      "root": "projects/ng-reactive-form-visualizer",
+      "sourceRoot": "projects/ng-reactive-form-visualizer/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/reactive-form-visualizer/tsconfig.lib.json",
-            "project": "projects/reactive-form-visualizer/ng-package.json"
+            "tsConfig": "projects/ng-reactive-form-visualizer/tsconfig.lib.json",
+            "project": "projects/ng-reactive-form-visualizer/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/reactive-form-visualizer/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-reactive-form-visualizer/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/reactive-form-visualizer/src/test.ts",
-            "tsConfig": "projects/reactive-form-visualizer/tsconfig.spec.json",
-            "karmaConfig": "projects/reactive-form-visualizer/karma.conf.js"
+            "main": "projects/ng-reactive-form-visualizer/src/test.ts",
+            "tsConfig": "projects/ng-reactive-form-visualizer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-reactive-form-visualizer/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/reactive-form-visualizer/tsconfig.lib.json",
-              "projects/reactive-form-visualizer/tsconfig.spec.json"
+              "projects/ng-reactive-form-visualizer/tsconfig.lib.json",
+              "projects/ng-reactive-form-visualizer/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
-    }},
-  "defaultProject": "reactive-form-visualizer"
+    }
+  },
+  "defaultProject": "ng-reactive-form-visualizer",
+  "cli": {
+    "analytics": "edae81b2-8eba-451c-9c05-4f04a3d9af06"
+  }
 }

@@ -11,14 +11,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "reactive-form-visualizer": [
-        "dist/reactive-form-visualizer/reactive-form-visualizer",
-        "dist/reactive-form-visualizer"
+      "ng-reactive-form-visualizer": [
+        "dist/ng-reactive-form-visualizer/ng-reactive-form-visualizer",
+        "dist/ng-reactive-form-visualizer"
       ]
     }
   },
