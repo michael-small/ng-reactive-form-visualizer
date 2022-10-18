@@ -2,5 +2,46 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "reactive-form-visualizer": {
+      "projectType": "library",
+      "root": "projects/reactive-form-visualizer",
+      "sourceRoot": "projects/reactive-form-visualizer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/reactive-form-visualizer/tsconfig.lib.json",
+            "project": "projects/reactive-form-visualizer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/reactive-form-visualizer/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/reactive-form-visualizer/src/test.ts",
+            "tsConfig": "projects/reactive-form-visualizer/tsconfig.spec.json",
+            "karmaConfig": "projects/reactive-form-visualizer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/reactive-form-visualizer/tsconfig.lib.json",
+              "projects/reactive-form-visualizer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "reactive-form-visualizer"
 }

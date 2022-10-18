@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "reactive-form-visualizer": [
+        "dist/reactive-form-visualizer/reactive-form-visualizer",
+        "dist/reactive-form-visualizer"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
